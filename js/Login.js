@@ -17,10 +17,10 @@ function entrar(){
  })
  .then(function(data){
  data.forEach(function(val) {
- if(val.usuario==user){
-     if(val.contraseña==pass){
-     alert("Bienvenid@: "+ val.nombre  +" " + val.apellido)
-    inicio= (val.nombre) + " "+ (val.apellido)
+ if(val.Usuario==usuario){
+     if(val.Contraseña==contraseña){
+     alert("Bienvenid@: "+ val.Nombre  +" " + val.Apellido)
+    inicio= (val.Nombre) + " "+ (val.Apellido)
     flag=true
      localStorage.setItem("Nombre", inicio);
  
