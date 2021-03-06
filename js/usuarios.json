@@ -1,0 +1,29 @@
+[
+    {
+        "Usuario": "Jean1",
+        "Contraseña": "Jean120",
+        "Nombre": "Jean",
+        "Apellido": "Betancourt",
+        "Tipo_de_Usuario": "Administrador",
+        "Correo": "Admin10@gmail.com"
+    },
+
+    {
+        "Usuario": "Juan23",
+        "Contraseña": "Juan123",
+        "Nombre": "Juan",
+        "Apellido": "Casadiego",
+        "Tipo_de_Usuario": "Profesor",
+        "Correo": "Elprofe23@hotmail.com"
+    },
+
+    {
+        "Usuario": "Pepe",
+        "Contraseña": "crack23",
+        "Nombre": "Pepe",
+        "Apellido": "Benavides",
+        "Tipo_de_Usuario": "Estudiante",
+        "Correo": "Est76@colegio.edu.co"
+    }
+    
+]
