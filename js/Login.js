@@ -27,7 +27,7 @@ function entrar(){
     cont=2
      localStorage.setItem("Nombre", Correcto);
  
-     window.location='../html/inicio.html'
+     window.location='./html/inicio.html'
      }else{
          alert("Contraseña incorrecta")
          cont=2
