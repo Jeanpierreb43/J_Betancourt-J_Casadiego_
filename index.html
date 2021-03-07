@@ -3,88 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilo.css">
+        <script src="../js/Login.js"></script>
+        <link rel="stylesheet" href="/css/Login.css">
         <title>PAGINA WEB ESCUELA NORMAL SUPERIOR LA HACIENDA</title>
-        <script src="js/codigos.js"></script>
-        <script src="/js/Login.js"></script>
     </head>
-    <body onload="mostrar()">
-        <header>
-            <img src="img/1.png" alt="">
-            <div class="escuela">
-                <h1>ENSH</h1>
-            </div>
-            <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html/FolcloryDeportes.html">Folclor y Deportes</a></li>
-                    <li><a href="html/educación.html">Educación</a></li>
-                    <li><a href="html/matrícula.html">Matrícula</a></li>
-                    <li><a href="html/Contactenos.html">Contactenos</a></li>
-                    <li><a href="html/Servicios.html">Servicios</a></li>
-                    <li><a href="html/chat.html">Chat</a></li>
-                    <li onclick="cerrar()" id="cerrar"> Cerrar Sesion</li>
-                </ul>
-            </nav>
-        </div>
-        </header><br><br>
-        <br><br><br><br><br>
-        <p>
-            <center>
-      <h2>Bienvenidos a la pagina de la Escuela Normal Superior la hacienda</h2></p>
-    </center>
-        <p>
-        <iframe width="1280" height="615" src="https://www.youtube.com/embed/2MUd7qnudoU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
-        <p>
-    <div class="parrafo1">
-        <img src="img/2.png" alt="">
-    <p>
-        <h4>Normal Superior La Hacienda busca ser líder en la formación de formadores, 
-        mediante una filosofía de esperanza en las posibilidades de todo aquel que se forme en 
-        nuestra Institución; siendo facilitadores y potencializadores de procesos que, descubiertos desde 
-        el interior del sujeto, se orienten hacia la transformación de la comunidad educativa y del entorno 
-        regional y nacional; siendo testigo de que nuestra Normal Superior La Hacienda Calidad Humana y 
-        la Excelencia Educativa y de lo que implican la responsabilidad, la autodisciplina 
-        y la autoformación en el desarrollo de las capacidades, los intereses y los sueño.</h4>
-    </p><br>
-</div>
-<div class="parrafo2">
-    <img src="img/3.png" alt="">
-<p>
-    <h4>Normal Superior La Hacienda busca ser líder en la formación de formadores, 
-    mediante una filosofía de esperanza en las posibilidades de todo aquel que se forme en 
-    nuestra Institución; siendo facilitadores y potencializadores de procesos que, descubiertos desde 
-    el interior del sujeto, se orienten hacia la transformación de la comunidad educativa y del entorno 
-    regional y nacional; siendo testigo de que nuestra Normal Superior La Hacienda Calidad Humana y 
-    la Excelencia Educativa y de lo que implican la responsabilidad, la autodisciplina 
-    y la autoformación en el desarrollo de las capacidades, los intereses y los sueño.</h4>
-</p><br>
-</div>
-<div class="parrafo3">
-    <img src="img/4.png" alt="">
-<p>
-    <h4>Normal Superior La Hacienda busca ser líder en la formación de formadores, 
-    mediante una filosofía de esperanza en las posibilidades de todo aquel que se forme en 
-    nuestra Institución; siendo facilitadores y potencializadores de procesos que, descubiertos desde 
-    el interior del sujeto, se orienten hacia la transformación de la comunidad educativa y del entorno 
-    regional y nacional; siendo testigo de que nuestra Normal Superior La Hacienda Calidad Humana y 
-    la Excelencia Educativa y de lo que implican la responsabilidad, la autodisciplina 
-    y la autoformación en el desarrollo de las capacidades, los intereses y los sueño.</h4>
-</p>
-</div>
-<br>
-
-<p>
-<h4>En esta página encontrarás todo tipo de información acerca de la escuela, ¡disfruta de tu estadía!<h4>
-</p><br>
-    <footer>
-        <div class="Pie">
-        <h1>Para sugerencias, ingresar a la pagina de Contactenos</h1>
-        <h2>Desarrollado por Jean Pierre Betancourt Rey y Juan Esteban casadiego</h2>
-
+    <body>
+      <script src="../js/Login.js"></script>
+      <form class="box">
+            
+    <div id="login">
+    
+     
+        <h1 id="titulo">Login</h1>
+    
+    
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="contraseña" placeholder="Contraseña">
+    <input type="button" value="Ingresar" id="ingresar" onclick="entrar()">
+    
     </div>
-    </footer>
-    </body>
+    </form>
+        </body>
 </html>

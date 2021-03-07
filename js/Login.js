@@ -1,39 +1,42 @@
-let inicio =String
-let flag = null
+var Correcto =""
+var cont = 1
 function entrar(){
-    let user = document.getElementById("usuario").value;
-    let pass = document.getElementById("contraseña").value;
- if((user.length == 0) & (pass.length == 0)){
+    var usuario1 = document.getElementById("usuario").value;
+    var contraseña1 = document.getElementById("contraseña").value;
+ if((usuario1.length == 0) & (contraseña1.length == 0)){
      alert("Llenar ambos campos")
- }
-    else if(user.length == 0){
+    }else if(usuario1.length == 0){
      alert("Ingrese un usuario")
-    }else if (pass.length == 0){
+    }else if (contraseña1.length == 0){
      alert("Ingrese una contraseña")
+    }else if(usuario1.length<4){
+        alert("El usuario debe tener minimo 4 caracteres")
     }else{
  fetch("/js/usuarios.json")
- .then(function(respuesta){
- return respuesta.json()
- })
- .then(function(data){
- data.forEach(function(val) {
- if(val.Usuario==usuario){
-     if(val.Contraseña==contraseña){
-     alert("Bienvenid@: "+ val.Nombre  +" " + val.Apellido)
-    inicio= (val.Nombre) + " "+ (val.Apellido)
-    flag=true
-     localStorage.setItem("Nombre", inicio);
+
  
-     window.location='/index.html'
+ .then(function(res){
+ return res.json()
+ })
+ .then(function(datos){
+ datos.forEach(function(jason) {
+ if(jason.Usuario==usuario1){
+     if(jason.Contraseña==contraseña1){
+     alert("Bienvenido: "+ jason.Nombre  +" " + jason.Apellido)
+    Correcto= (jason.Nombre) + " "+ (jason.Apellido)
+    cont=2
+     localStorage.setItem("Nombre", Correcto);
+ 
+     window.location='/html/inicio.html'
      }else{
          alert("Contraseña incorrecta")
-         flag=true
+         cont=2
      }
 }
 })
-if(flag==null){
+if(cont==1){
 
-    alert("Usuario incorrecto")
+    alert("Usuario no registrado")
 }
 })
 .catch(function(error){
@@ -42,21 +45,8 @@ if(flag==null){
 })
 }
 }
+
 function mostrar(){
-    var nom = localStorage.getItem('Nombre')
-document.getElementById('datos').innerHTML= "Bienvenido: "+nom;
-
-var sesion= document.getElementById('cerrar');
-var datos= document.getElementById('datos');
-
-sesion.style.display= '';
-
- datos.style.display= '';
-}
-
-function cerrar(){
-    document.getElementById('datos').innerHTML= " ";
-    localStorage.removeItem('Nombre');
-    alert("Inicie sesion para continuar")
-    window.location= '/html/Login.html'
+var Nom= localStorage.getItem('Nombre');
+document.getElementById('Datos').innerHTML = " "+Nom
 }
