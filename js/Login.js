@@ -12,7 +12,7 @@ function entrar(){
     }else if(usuario1.length<4){
         alert("El usuario debe tener minimo 4 caracteres")
     }else{
- fetch("./js/usuarios.json")
+ fetch("usuarios.json")
 
  
  .then(function(res){
@@ -27,7 +27,7 @@ function entrar(){
     cont=2
      localStorage.setItem("Nombre", Correcto);
  
-     window.location='./html/inicio.html'
+     window.location='../html/inicio.html'
      }else{
          alert("Contraseña incorrecta")
          cont=2
