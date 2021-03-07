@@ -12,7 +12,7 @@ function entrar(){
     }else if(usuario1.length<4){
         alert("El usuario debe tener minimo 4 caracteres")
     }else{
- fetch("usuarios.json")
+ fetch("./js/usuarios.json")
 
  
  .then(function(res){
